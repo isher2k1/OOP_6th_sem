@@ -1,0 +1,13 @@
+<style>
+  #tables {
+    display: grid;
+  }
+  .table-button {
+    margin-bottom: 2%;
+  }
+</style>
+<div id="tables">
+  <button class="table-button" mat-raised-button color="primary" (click)="changeTable(item)" *ngFor="let item of this.databaseConnection.tableNames; let i = index">
+    {{item}}
+  </button>
+</div>
